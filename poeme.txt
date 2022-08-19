@@ -5,5 +5,6 @@ Rose
 Orange
 Bleu
 Vert
+Jaune
 rouge
 Ce sont les couleurs de l'arc en ciel
