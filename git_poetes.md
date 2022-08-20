@@ -4,8 +4,8 @@
 https://www.youtube.com/watch?v=BCQHnlnPusY&list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV
 
 Pourquoi Git et GitHub ?
-Version control 
-Collaboration
+. Version control 
+. Collaboration
 
 Git
 Version control software 
