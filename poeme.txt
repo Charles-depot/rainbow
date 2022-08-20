@@ -5,6 +5,7 @@ Rose
 Orange
 Bleu
 Vert
+Indigo
 Licorne
 Jaune
 rouge
