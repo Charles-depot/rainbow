@@ -1,4 +1,4 @@
-L'arc en ciel et la licorne
+L'arc en ciel et la licorne et le poney
 
 Violet
 Rose
@@ -11,3 +11,4 @@ Jaune
 rouge
 Ce sont les couleurs de l'arc en ciel
 Et la licorne
+Poney
