@@ -6,6 +6,7 @@ Orange
 Bleu
 Vert
 Indigo
+Recyclage !
 Licorne
 Jaune
 rouge
