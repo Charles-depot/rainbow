@@ -169,8 +169,11 @@ Et attendre la réponse.
 Aller sur charles-depot et cliquer sur *Pull requests*
 
 ![fork-2](fork-2.png)
+
 En cliquant sur la demande on peut voir les changements
+
 ![fork-3](fork-3.png)
+
 Remplir le commentaire
 Cliquer sur *Merge pull requests*
 
