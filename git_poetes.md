@@ -129,3 +129,50 @@ On peut voir le résultat.
 ![graph_fin_2](graph_fin_2.PNG)
 
 
+1.3- Forks and Pull Requests - Git and GitHub for Poets
+
+Nous allons voir comment une autre personne et vous peuvent contribuer/collaborer
+au dépot.
+
+Deux concepts à ajouter.
+
+Fork
+
+une instance compléte de mon dépot sur un autre compte
+On aura une exacte réplication du dépot avec les commit et les branches.
+Je peux travailler sur le fork (commit, branches) sans modifier le dépot original.
+
+
+Pull request
+
+Cela signifie que par exemple si une branche de mon travail sur le fork est superbe
+et que je souhaite contribuer dans le dépot original. 
+Je vais envoyer ce travail dans le dépot original.
+Et c'est au dépot original d'accepter ou rejeter d'où le pull request.
+
+
+Actions
+
+Aller sur charlestuteur, charcher charles-depot puis fork.
+On peut le voir sur ce compte d'où provient le fork :
+![fork-1](fork-1.png)
+
+Modifier le poeme
+Faire un commit en choisissant *Create a new branch for this commit and start a pull request.*
+On peut aussi faire juste un commit
+Ensuite faire un pull request pour ajouter à la brancher master du fork
+Verifier sur Insights/Network
+
+Créer un pull request vers charles-depot.
+Et attendre la réponse.
+
+Aller sur charles-depot et cliquer sur *Pull requests*
+
+![fork-2](fork-2.png)
+En cliquant sur la demande on peut voir les changements
+![fork-3](fork-3.png)
+Remplir le commentaire
+Cliquer sur *Merge pull requests*
+
+Aller sur charlestuteur pour voir la péponse.
+
