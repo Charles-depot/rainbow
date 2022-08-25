@@ -218,6 +218,25 @@ Donner un nom, une description et une couleur.
 [Etiquettes](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels)
 
 **Associer les issues au commit ou au pull request ?**
+Créer un commit et associer dans le titre le numéro de l'issue comme  ... per #8 
+On crée un commit particulier à cette issue.
+En revenant sur les issues :
+Charles-depot added a commit that referenced this issue 1 minute ago
 
-...
+![issues1](issues.PNG)
+On peut cliquer sur commit lié per #8 pour suivre les changements.
+
+Je peux ensuite clore l'issue. 
+
+ou directement dans le commit en écrivant dans le titre fixes #8
+
+On peut faire une issue à partir d'un commit.
+
+commit 21f9ba806f57fd947586de3517a469fe41af2157
+
+![issues](issues2.PNG)
+
+## Bilan
+référence au numéro de l'issue
+référence à l'identifiant d'un commit ou description de l'issue.
 
