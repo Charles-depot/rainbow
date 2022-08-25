@@ -1,5 +1,14 @@
+# Git et GitHub pour les poètes
 
-1.1: Introduction - Git et GitHub pour les poètes
+1.1: [Introduction](#git)
+
+1.2: [Branches](#branche)
+
+1.3- [Forks and Pull Requests](#fork)
+
+1.4- [GitHub Issues](#issues)
+
+# 1.1: Introduction - Git et GitHub pour les poètes <a name="git"></a>
 
 https://www.youtube.com/watch?v=BCQHnlnPusY&list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV
 
@@ -41,7 +50,7 @@ En cliquant sur un des commit, on peut voir ce qui a été modifié (solugné, b
 On voit aussi "commit d8f911b0c32226239ff7bb95e40306014b6386be" commit hash meaning, identifiant unique du commit
 On le voit aussi dans l'URL https://github.com/Charles-depot/rainbow/commit/d8f911b0c32226239ff7bb95e40306014b6386be
 
-1.2: Branches - Git and GitHub for Poets
+# 1.2: Branches - Git and GitHub for Poets <a name="branche"></a>
 
 Repository Poemes
 
@@ -85,7 +94,7 @@ Ensuite on a le choix :
  push : pousser (envoyer) quelque chose à quelqu'un 
  pull : tirer quelque chose	à quelqu'un
  
- pull request : prendre les changments et les tirer vers la branche master
+ pull request : prendre les changements et les tirer vers la branche master
  merge
  
  Je retourne sur la branche "main" pour voir :
@@ -129,7 +138,7 @@ On peut voir le résultat.
 ![graph_fin_2](graph_fin_2.PNG)
 
 
-1.3- Forks and Pull Requests - Git and GitHub for Poets
+# 1.3- Forks and Pull Requests - Git and GitHub for Poets <a name="fork"></a>
 
 Nous allons voir comment une autre personne et vous peuvent contribuer/collaborer
 au dépot.
@@ -153,7 +162,7 @@ Et c'est au dépot original d'accepter ou rejeter d'où le pull request.
 
 Actions
 
-Aller sur charlestuteur, charcher charles-depot puis fork.
+Aller sur charlestuteur, chercher charles-depot puis fork.
 On peut le voir sur ce compte d'où provient le fork :
 ![fork-1](fork-1.png)
 
@@ -178,4 +187,35 @@ Remplir le commentaire
 Cliquer sur *Merge pull requests*
 
 Aller sur charlestuteur pour voir la péponse.
+
+# 1.4- GitHub Issues <a name="issues"></a>
+
+Vous pouvez utiliser GitHub Issues pour planifier pour suivre les idées, les commentaires, les tâches 
+ou les bogues et suivre votre travail.
+
+Cliquer sur *New Issue* pour créer un nouveau problème.
+
+Remplir les informations
+
+Donner à votre problème un titre descriptif. Le titre doit indiquer en un coup d'œil de quoi il s'agit.
+Ajoutez une description qui explique le but du problème, y compris tous les détails qui pourraient aider à résoudre le problème. 
+
+Vous pouvez utiliser Markdown pour ajouter une mise en forme, des liens, des emojis, etc. 
+Pour plus d'informations, consultez [« Écrire sur GitHub »](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+
+**Ajouter une liste de tâches.**
+- [] #50
+- [] faire les modifications
+
+**Ajouter des étiquettes (labels)**
+Ajouter une étiquette pour catégoriser votre problème. 
+GitHub fournit des étiquettes par défaut.
+
+Vous pouvez utiliser ces libellés par défaut ou créer les votres.
+
+Cliquer sur *issues* puis *Labels* puis *New label*.
+Donner un nom, une description et une couleur.
+[Etiquettes](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels)
+
+**Associer les issues au commit ou au pull request ?**
 
