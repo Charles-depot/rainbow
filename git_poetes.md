@@ -1,4 +1,4 @@
-# Git et GitHub pour les poètes
+# Git et GitHub pour les poètes 
 
 1.1: [Introduction](#git)
 
@@ -218,4 +218,6 @@ Donner un nom, une description et une couleur.
 [Etiquettes](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels)
 
 **Associer les issues au commit ou au pull request ?**
+
+...
 
