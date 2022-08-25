@@ -223,7 +223,7 @@ On crée un commit particulier à cette issue.
 En revenant sur les issues :
 Charles-depot added a commit that referenced this issue 1 minute ago
 
-![issues1](issues.PNG)
+![issues1](issues1.PNG)
 On peut cliquer sur commit lié per #8 pour suivre les changements.
 
 Je peux ensuite clore l'issue. 
