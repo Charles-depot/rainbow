@@ -251,3 +251,135 @@ RAS
 
 # 1.6: Cloner un dépot et Push-Pull <a name="clone"></a>
 
+1.6- Cloning Repo and Push/Pull
+
+Pour l'instant nous avons travaillé directement sur Github website.
+
+Nous allons travaillé maintenat sur l'ordinateur.
+
+Il faut installer **Git** sur l'ordinateur (voir aussi les différents clients).
+
+https://git-scm.com/
+
+https://www.youtube.com/watch?v=225wkShIcc8
+
+### GitHub Desktop
+Client git : https://desktop.github.com/
+ 
+aide  : https://docs.github.com/en/desktop
+
+# Git
+
+## Partie 1
+Vérifier que l'installation a bien fonctionné en ouvrant un cmd.
+Puis taper git. On obtient une aide.
+
+Faire un dépot Git local. Il faut un dossier dans l'ordinateur qui soit un dépot Git.
+
+On va saisir le dépot sur GitHub et le mettre en local.
+
+On crée un nouveau dépot : rainbow-song avec un readme.md
+
+On peut ensuite voir :
+![adresse](clone.png)
+
+C'est une  URL spécial qui correspond à ce dépot. Nécéssaire pour cloner
+le dépot créé sur un ordinateur local.
+https://github.com/Charles-depot/Rainbow-song.git
+
+NB : Git associe une URL distante à un nom, et votre dépot par défaut est généralement appelée origin.
+
+https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories
+
+## Partie 2
+Dans le dossier local
+
+Soit cmd ou clique droit Git Bash Here
+![bash](clone2.png)
+
+```
+git clone https://github.com/Charles-depot/Rainbow-song.git
+```
+On obtient :
+
+![bash](clone3.png)
+
+Dans le dossier local :
+
+![bash](clone4.png)
+
+![bash](clone5.png)
+
+Vous pouvez ouvrir le fichier README.md local pour voir qu'il correspond
+à celui de GitHub. Et le modifier. Le sauvegarder.
+
+```
+git status
+```
+![bash](clone6.png)
+
+Ce n'est donc pas le dépot Git. Je ne suis pas dans le bon dossier.
+
+![bash](clone7.png)
+
+On voit que l'on est dans la branch *master*.
+On peut voir qu'un fichier a été modifié. 
+
+Quand on est sur GitHub, on édit et on sauvegarde qd on commit en m^me temps.
+
+Pour l'instant, le fichier est modifié localement.
+
+```
+$ git commit -a -m "Ajout de la cle C"
+```
+-a tous les fichiers
+-m commentaire
+
+On obtient :
+
+![bash](clone8.png)
+
+```
+git config --list 
+```
+Cela permet d'avoir des renseignements sur la configuration locale.
+Il y a pb avec le user.name. Il faut le modifier. Et prendre le user.name du dépot GitHub.
+
+```
+git config global user.name = "Charles-depot" 
+```
+![bash](clone9.png)
+
+Cependant rien n'a changé dans le GitHub.
+
+```
+git remote
+
+>> origin 
+```
+
+```
+$ git remote -v
+origin  https://github.com/Charles-depot/Rainbow-song.git (fetch)
+origin  https://github.com/Charles-depot/Rainbow-song.git (push)
+
+```
+donc 
+
+```
+git push origin master
+```
+
+Cela ne fonction pas.
+
+```
+git push origin main
+```
+*main* est nom de la branche dans le dépot.
+
+On obtient :
+
+![bash](clone10.png)
+
+Et sur le dépot GitHub, on  peut voir le changement.
+
