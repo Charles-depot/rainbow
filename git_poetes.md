@@ -8,6 +8,10 @@
 
 1.4- [GitHub Issues](#issues)
 
+1.5-[Introduction ligne de commande](#ligne)
+
+1.6-[Cloner un dépot et Push-Pull](#clone)
+
 # 1.1: Introduction - Git et GitHub pour les poètes <a name="git"></a>
 
 https://www.youtube.com/watch?v=BCQHnlnPusY&list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV
@@ -238,5 +242,12 @@ commit 21f9ba806f57fd947586de3517a469fe41af2157
 
 ## Bilan
 référence au numéro de l'issue
+
 référence à l'identifiant d'un commit ou description de l'issue.
+
+# 1.5: Introduction ligne de commande <a name="ligne"></a>
+
+RAS
+
+# 1.6: Cloner un dépot et Push-Pull <a name="clone"></a>
 
