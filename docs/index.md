@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages 23
+## Welcome to GitHub Pages 23 42
 
 You can use the [editor on GitHub](https://github.com/Charles-depot/rainbow/edit/gh-pages/docs/index.md) to maintain and preview the content for your website in Markdown files.
 
