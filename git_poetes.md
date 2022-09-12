@@ -281,7 +281,7 @@ On va saisir le dépot sur GitHub et le mettre en local.
 On crée un nouveau dépot : rainbow-song avec un readme.md
 
 On peut ensuite voir :
-![adresse](clone.png)
+![adresse](clone1.png)
 
 C'est une  URL spécial qui correspond à ce dépot. Nécéssaire pour cloner
 le dépot créé sur un ordinateur local.
