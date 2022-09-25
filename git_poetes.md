@@ -12,6 +12,8 @@
 
 1.6-[Cloner un dépot et Push-Pull](#clone)
 
+1.7-[Git init and git add](#remote)
+
 # 1.1: Introduction - Git et GitHub pour les poètes <a name="git"></a>
 
 https://www.youtube.com/watch?v=BCQHnlnPusY&list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV
@@ -383,3 +385,237 @@ On obtient :
 
 Et sur le dépot GitHub, on  peut voir le changement.
 
+# 1.7: Git init and git add <a name="remote"></a>
+
+Dans les parties précédentes, nous avons créé un dépot puis on l'a 
+mis dans l'ordinateur.
+
+Nous allons lier un dossier local à un dépot Git
+
+## Création d'un dossier local test_depot 
+un fichier dance.md
+
+Dans ce dossier: 
+
+:::info
+```
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+```
+:::
+
+Nous allons en faire un dépot git.
+
+:::info
+```
+$ git init
+Initialized empty Git repository in E:/Git Mkdocs Markdown/Test_depot/.git/
+```
+:::
+
+:::info
+```
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        dance.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+```
+:::
+
+## Ajouter un nouveau fichier 
+
+Création de dance-2.md
+
+:::info
+```
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        dance-2.md
+        dance.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+```
+:::
+
+On ajoute le suivi sur le fichier dance.md
+:::info
+```
+$ git add dance.md
+```
+:::
+
+:::info
+```
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   dance.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        dance-2.md
+```
+:::
+
+On peut lire qu'il y a un fichier suivi *dance.md* et un fichier non suivi *dance-2.md*
+
+
+Un petit *commit*
+:::info
+```
+$ git commit -m "Ajout d'une danse"
+[master (root-commit) 1c0d430] Ajout d'une danse
+ 1 file changed, 3 insertions(+)
+ create mode 100644 dance.md
+```
+:::
+
+:::info
+```
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        dance-2.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+```
+:::
+
+Si on souhaite tout suivre, on utilise la commande *git add .*
+
+:::info
+```
+$ git add .
+
+$ git commit -m "Ajout de la deuxième dance"
+[master 8953913] Ajout de la deuxième dance
+ 1 file changed, 3 insertions(+)
+ create mode 100644 dance-2.md
+ 
+$ git status
+On branch master
+nothing to commit, working tree clean
+```
+:::
+
+## Mettre tout dans un dépot
+
+:::info
+```
+$ git push master
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream master master
+
+$ git remote -v
+```
+:::
+
+Le dépot Git vide existe mais il n'y a pas d'association avec le dossier local.
+
+![](git1.PNG)
+
+![](git2.PNG)
+
+![](git3.PNG)
+
+On peut voir la ligne
+https://github.com/Charles-depot/test_depot.git
+qui permet d'associer le dépot distant avec le dossier local
+
+:::info
+```
+$ git remote add origin https://github.com/Charles-depot/test_depot.git
+
+$ git remote
+origin
+
+$ git remote -v
+origin  https://github.com/Charles-depot/test_depot.git (fetch)
+origin  https://github.com/Charles-depot/test_depot.git (push)
+```
+:::
+
+Le dépot distant se nomme *origin*
+
+
+:::info
+```
+$ git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 496 bytes | 248.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Charles-depot/test_depot.git
+ * [new branch]      master -> master
+
+```
+:::
+
+Si on regarde maintenant dans le dépot distant.
+![](git4.PNG)
+
+On retrouve nos deux fichiers.
+
+## Changement dans GitHub
+
+Modification du fichier dance.md dans GitHub
+![](git5.PNG)
+Un petit commit
+![](git6.PNG)
+
+Que s'est-il passé en local ?
+:::info
+```
+$ git status
+On branch master
+nothing to commit, working tree clean
+```
+:::
+
+**Rien**
+
+La solution avec un **git pull**.
+
+:::info
+```
+$ git pull origin master
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 699 bytes | 2.00 KiB/s, done.
+From https://github.com/Charles-depot/test_depot
+ * branch            master     -> FETCH_HEAD
+   8953913..41b7811  master     -> origin/master
+Updating 8953913..41b7811
+Fast-forward
+ dance.md | 1 +
+ 1 file changed, 1 insertion(+)
+
+```
+:::
+
+On ouvre le fichier en local. :tada:
+
+
+![](git7.PNG)
