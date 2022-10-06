@@ -29,26 +29,26 @@ GitHub
 web service
 
 **Repository**
-Créer un compte sur Github
-Créer un dépot 
-Créer un new file de nom poemes.txt
+- Créer un compte sur Github
+- Créer un dépot 
+- Créer un new file de nom poemes.txt
 
 **Commit new file**  ( Commit directly to the main branch)
 Le poeme est dans le dépot. 
 
 **Commmit change**
-Cliquer sur poeme.txt
-Il manque la couleur verte.
-Cliquer sur le crayon --> Edit this file
-Remplir en bas "Commit change" par "j'ai ajouté la couleur verte" puis cliquer sur "Commit changes"
+- Cliquer sur poeme.txt
+- Il manque la couleur verte.
+- Cliquer sur le crayon --> Edit this file
+- Remplir en bas "Commit change" par "j'ai ajouté la couleur verte" puis cliquer sur "Commit changes"
 
 Il manque la couleur jaune.
 Cliquer sur le crayon --> Edit this file
 Remplir en bas "Commit change" par "j'ai ajouté la couleur jaune" puis cliquer sur "Commit changes"
 
 **Bilan :**
-Création d'un dépot.
-Plusieurs commit
+- Création d'un dépot.
+- Plusieurs commit
 
 Nous allons pouvoir voir l'historique
 Cliquer sur **History** pour voir l'historique.
